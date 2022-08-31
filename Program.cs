@@ -1,19 +1,21 @@
 ﻿using System;
 
-namespace ReverseList;
-
-class Program
+namespace ReverseList
 {
-    static void Main(string[] args)
+
+    class Program
     {
-        var numbers = new List<int>()
+        static void Main(string[] args)
+        {
+            var numbers = new List<int>()
             { 1, 2, 3, 4, 5};
 
-        numbers.Reverse();
+            numbers.Reverse();
 
-        foreach (int number in numbers)
-        {
-            Console.WriteLine(number);
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
         }
     }
 }
