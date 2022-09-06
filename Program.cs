@@ -7,6 +7,11 @@ namespace ReverseList
     {
         public static void Main(string[] args)
         {
+            if (args == null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
             var numbers = new List<int>()
             { 1, 2, 3, 4, 5};
 
